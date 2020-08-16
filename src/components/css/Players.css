@@ -1,0 +1,58 @@
+.details h6 {
+  font-size: 16px !important;
+  font-family: 'raleway';
+}
+
+.detail-img {
+  background-color: #640a4c;
+  padding: 20px;
+}
+
+.details-text {
+  margin-top: 10px;
+  color: white;
+}
+
+.details {
+  background-color: #640a4c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px !important;
+}
+
+input {
+  margin: 0 auto !important;
+  display: block;
+  padding: 10px;
+  margin-top: 30px !important;
+  width: 50%;
+  border-radius: 8px !important;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.flex-images {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flex-images img {
+  width: 100%;
+  padding: 2px;
+  background-color: #640a4c;
+  margin-bottom: 20px;
+}
+
+.player-img:hover {
+  transform: scale(1.2);
+}
+
+@media(max-width: 767px){
+  input {
+    font-size: 11px;
+  }
+}
