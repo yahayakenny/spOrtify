@@ -70,8 +70,7 @@ export class Players extends Component {
                     <img src = {item.strRender} alt =""/>
                     <img src = {item.strBanner} alt =""/>
                 </div><br/><br/> 
-            </div>   
-               
+            </div>         
         ))}
       </div>
     );

@@ -42,9 +42,7 @@ export class Latest extends Component {
                  </div>
                ))}
             </div>
-
-            </div>
-            
+            </div>            
         )
     }
 }
