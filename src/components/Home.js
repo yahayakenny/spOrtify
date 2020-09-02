@@ -49,20 +49,6 @@ export class Home extends Component {
                   <p>Stadium: {item.strStadium}</p>
                   <p>Stadium Location: {item.strStadiumLocation}</p>
                   <p>Stadium Capacity: {item.intStadiumCapacity}</p>
-                  <div class='social-media'>
-                    <a href={item.strFacebook}>
-                      <i class='fab fa-facebook'></i>
-                    </a>
-                    <a href={item.strTwitter}>
-                      <i class='fab fa-twitter'></i>
-                    </a>
-                    <a href={item.strInstagram}>
-                      <i class='fab fa-instagram'></i>
-                    </a>
-                    <a href={item.strYoutube}>
-                      <i class='fab fa-youtube'></i>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
