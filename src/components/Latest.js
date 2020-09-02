@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-
 export class Latest extends Component {
     state = {
         latest: [],
@@ -46,5 +45,4 @@ export class Latest extends Component {
         )
     }
 }
-
 export default Latest

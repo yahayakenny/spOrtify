@@ -37,7 +37,7 @@ export class Players extends Component {
           />
         </form><br/><br/><br/>
 
-        {this.state.player.map((item) => (
+        {this.state.player?.length > 0 ? this.state.player.map((item) => (
             <div class = "container">
                 <div class = "row">
                     <div class = "col-lg-5 col-md-5 col-sm-12 col-xs-12 detail-img">
@@ -71,7 +71,7 @@ export class Players extends Component {
                     <img src = {item.strBanner} alt =""/>
                 </div><br/><br/> 
             </div>         
-        ))}
+        )):<h1 class = "text-center" style = {{fontWeight: 'bolder', color: '#38003c'}}>No result found</h1>}
       </div>
     );
   }
