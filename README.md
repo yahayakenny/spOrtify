@@ -2,10 +2,10 @@
 spOrtify
 
 ## Project Description
-SpOrtify is a multi-page react application where you can find out more about your premier league teams, favourite players and latest news in the world using the sportsDB API.
+SpOrtify is a multi-page react application where you can get more information about your premier league teams, favourite players and latest news in the world using the sportsDB API.
 
 ## Demo
-
+![Screen-Recording-2020-09-04-at-1](https://user-images.githubusercontent.com/63402676/92229684-c1fdc300-eea1-11ea-90f0-ff389dd9a997.gif)
 
 
 ## Live Site
@@ -27,7 +27,10 @@ The live site can be viewed here https://sportifyleague.netlify.app/
 
 
 # How to use: Developers
+
 Clone the source locally:
+```$ git clone 
+$ cd ````
 
 
 
