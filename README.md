@@ -34,19 +34,24 @@ $ git clone https://github.com/yahayakenny/spOrtify.git
 ```
 Move into the App directory:
 
-```$ cd sportify```
+```
+$ cd sportify
+```
 
 Install Dependencies:
 
-```$ npm install```
+```
+$ npm install
+```
 
 Start React App:
-```$ npm start```
+```
+$ npm start
+```
 
+### Related
+Related https://www.thesportsdb.com/api.php
 
-
-# Disclaimer 
-This tool is provided for educational and informational purposes only. While i hope you find it useful to you as a healthcare professional, it is in no way intended to serve as a diagnostic service or platform, to provide certainty with respect to a diagnosis, or to otherwise substitute for the clinical judgment of a qualified healthcare professional.
 
 ## License
 Yahaya Kehinde 2020.
