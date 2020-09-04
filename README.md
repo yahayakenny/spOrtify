@@ -29,8 +29,10 @@ The live site can be viewed here https://sportifyleague.netlify.app/
 # How to use: Developers
 
 Clone the source locally:
-```$ git clone 
-$ cd ````
+```
+$ git clone https://github.com/yahayakenny/spOrtify.git
+$ cd sportify
+````
 
 
 
