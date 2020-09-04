@@ -51,7 +51,7 @@ $ npm start
 ```
 
 ### Related
-Related https://www.thesportsdb.com/api.php
+https://www.thesportsdb.com/api.php
 
 
 ## License
