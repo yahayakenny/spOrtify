@@ -31,9 +31,17 @@ The live site can be viewed here https://sportifyleague.netlify.app/
 Clone the source locally:
 ```
 $ git clone https://github.com/yahayakenny/spOrtify.git
-$ cd sportify
-````
+```
+Move into the App directory:
 
+```$ cd sportify```
+
+Install Dependencies:
+
+```$ npm install```
+
+Start React App:
+```$ npm start```
 
 
 
