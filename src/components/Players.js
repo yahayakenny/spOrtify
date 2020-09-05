@@ -12,6 +12,7 @@ export class Players extends Component {
     const response = await axios.get(
       `https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${searchText}`
     );
+    
     this.setState({ player: response.data.player });
   };
 
@@ -37,17 +38,17 @@ export class Players extends Component {
         </form><br/><br/><br/>
 
         {this.state.player?.length > 0 ? this.state.player.map((item) => (
-            <div class = "container">
-                <div class = "row">
-                    <div class = "col-lg-5 col-md-5 col-sm-12 col-xs-12 detail-img">
-                        <img src = {item.strCutout} style = {{width: '100%'}} class = "player-img" alt =""/>
-                        <div class = "text-left details-text"><br/>
+            <div className = "container" key = {item.idPlayer}>
+                <div className = "row">
+                    <div className = "col-lg-5 col-md-5 col-sm-12 col-xs-12 detail-img">
+                        <img src = {item.strCutout} style = {{width: '100%'}} className = "player-img" alt =""/>
+                        <div className = "text-left details-text"><br/>
                             <h1>Name: {item.strPlayer}</h1>
                             <h4>Nationality: {item.strNationality}</h4>
                             <h4>Club: {item.strTeam}</h4>       
                        </div>
                     </div>
-                    <div class = "col-lg-7 col-md-7 col-sm-12 col-xs-12 details">
+                    <div className = "col-lg-7 col-md-7 col-sm-12 col-xs-12 details">
                         <h1>About</h1>
                             <h4>Born: {item.dateBorn}</h4>
                             <h4>Birth location: {item.strBirthLocation}</h4>
@@ -59,7 +60,7 @@ export class Players extends Component {
                         <h6>{item.strDescriptionEN}</h6>
                     </div>  
                 </div>
-                <div class = " flex-images">
+                <div className = " flex-images">
                     <img src = {item.strFanart1} alt =""/>
                     <img src = {item.strFanart2} alt =""/>
                     <img src = {item.strFanart3} alt =""/>
@@ -69,7 +70,7 @@ export class Players extends Component {
                     <img src = {item.strBanner} alt =""/>
                 </div><br/><br/> 
             </div>         
-        )):<h1 class = "text-center" style = {{fontWeight: 'bolder', color: '#38003c'}}>No result found</h1>}
+        )):<h1 className= "text-center" style = {{fontWeight: 'bolder', color: '#38003c'}}>No result found</h1>}
       </div>
     );
   }

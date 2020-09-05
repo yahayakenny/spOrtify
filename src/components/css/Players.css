@@ -33,17 +33,9 @@ input {
   text-align: center;
 }
 
-/* .flex-images {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-} */
-
 .flex-images img {
   width: 100%;
   padding: 2px;
-  background-color: #640a4c;
   margin-bottom: 20px;
 }
 
