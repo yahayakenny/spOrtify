@@ -16,7 +16,6 @@ export class Home extends Component {
       )
       .then((res) => {
         const getTeams = res.data.teams;
-        console.log(getTeams);
         this.setState({ teams: getTeams });
       });
   }
@@ -34,7 +33,7 @@ export class Home extends Component {
 
         <div className='display-teams album'>
           {this.state.teams.map((item) => (
-            <div className='flip-card bg-light'>
+            <div className='flip-card bg-light' key = {item.idTeam}>
               <div className='flip-card-inner'>
                 <div className='flip-card-front'>
                   <img
@@ -44,7 +43,7 @@ export class Home extends Component {
                     key = {item.idTeam}
                   />
                 </div>
-                <div className='flip-card-back'>
+                <div className='flip-card-back'> 
                   <h1>{item.strTeam}</h1>
                   <p>NickNames: {item.strKeywords}</p>
                   <p>Stadium: {item.strStadium}</p>

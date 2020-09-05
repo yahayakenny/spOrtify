@@ -17,14 +17,14 @@ export class Latest extends Component {
             this.setState({ latest: getLatest });
           });
       }
-      
+
     render() {
         return (
             <div class ="bg-light">
             <h1 class = "text-center latest">LATEST NEWS</h1>
             <div class = "displayLatest container">
                {this.state.latest.map (item => (
-                   <div class="col-md-6 individual">
+                   <div class="col-md-6 individual" key = {item.idTeam}>
                    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-200 position-relative">
                      <div class="col p-4 d-flex flex-column position-static">
                        <strong class="d-inline-block mb-2 text-success">{item.strLeague}</strong>
