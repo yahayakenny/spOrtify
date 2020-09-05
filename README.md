@@ -20,7 +20,7 @@ The live site can be viewed here https://sportifyleague.netlify.app/
 ## Built with
 - Sports DB API
 - React.js
-- Reeact Router DOM
+- React Router DOM
 - Axios
 - Javascript
 - Bootstrap
