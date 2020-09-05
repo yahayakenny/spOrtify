@@ -17,6 +17,7 @@ export class Latest extends Component {
             this.setState({ latest: getLatest });
           });
       }
+      
     render() {
         return (
             <div class ="bg-light">

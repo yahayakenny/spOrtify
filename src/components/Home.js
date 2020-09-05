@@ -24,26 +24,27 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <section class='jumbotron text-center bg-light'>
-          <div class='container '>
+        <section className='jumbotron text-center bg-light'>
+          <div className='container '>
             <h1 style={{ color: '#640a4c' }}>Your Favourite Premier League Teams</h1>
             <br />
-            <img src={premierLeague} class='league' alt ="" />
+            <img src={premierLeague} className='league' alt ="" />
           </div>
         </section>
 
-        <div class='display-teams album'>
+        <div className='display-teams album'>
           {this.state.teams.map((item) => (
-            <div class='flip-card bg-light'>
-              <div class='flip-card-inner'>
-                <div class='flip-card-front'>
+            <div className='flip-card bg-light'>
+              <div className='flip-card-inner'>
+                <div className='flip-card-front'>
                   <img
                     src={item.strTeamBadge}
                     style={{ width: '300px', height: '300px' }}
                     alt = ""
+                    key = {item.idTeam}
                   />
                 </div>
-                <div class='flip-card-back'>
+                <div className='flip-card-back'>
                   <h1>{item.strTeam}</h1>
                   <p>NickNames: {item.strKeywords}</p>
                   <p>Stadium: {item.strStadium}</p>

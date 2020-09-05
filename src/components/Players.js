@@ -12,7 +12,6 @@ export class Players extends Component {
     const response = await axios.get(
       `https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${searchText}`
     );
-    console.log(response.data);
     this.setState({ player: response.data.player });
   };
 
@@ -48,7 +47,6 @@ export class Players extends Component {
                             <h4>Club: {item.strTeam}</h4>       
                        </div>
                     </div>
-
                     <div class = "col-lg-7 col-md-7 col-sm-12 col-xs-12 details">
                         <h1>About</h1>
                             <h4>Born: {item.dateBorn}</h4>
@@ -59,7 +57,7 @@ export class Players extends Component {
                             <h4>Average wage: {item.strWage}</h4> 
                             <h2>Description:</h2>                                          
                         <h6>{item.strDescriptionEN}</h6>
-                    </div>
+                    </div>  
                 </div>
                 <div class = " flex-images">
                     <img src = {item.strFanart1} alt =""/>

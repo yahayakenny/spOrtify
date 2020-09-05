@@ -8,7 +8,7 @@ export class NavBar extends Component {
         return (
         <div>
             <nav className = "navbar navbar-expand-md navbar-dark bg-dark sticky-top">    
-	            <div className= "navbar-brand"><img src = {lion} class = "lion" alt = "#"/>SpOrtify</div>
+	            <div className= "navbar-brand"><img src = {lion} className = "lion" alt = "#"/>SpOrtify</div>
 	                <button
 	                type="button"
 	                className="navbar-toggler"
