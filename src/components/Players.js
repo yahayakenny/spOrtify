@@ -6,7 +6,13 @@ export class Players extends Component {
   state = {
     player: [],
     searchText: '',
+    selectedPlayer : null
   };
+
+  onPlayerClick = (item) => {
+    // console.log('from the app', item) 
+    this.setState({selectedPlayer: item.strDescriptionEN })
+  }
 
   searchPlayer = async (searchText) => {
     const response = await axios.get(
@@ -41,23 +47,40 @@ export class Players extends Component {
             <div className = "container" key = {item.idPlayer}>
                 <div className = "row">
                     <div className = "col-lg-5 col-md-5 col-sm-12 col-xs-12 detail-img">
-                        <img src = {item.strCutout} style = {{width: '100%'}} className = "player-img" alt =""/>
-                        <div className = "text-left details-text"><br/>
-                            <h1>Name: {item.strPlayer}</h1>
-                            <h4>Nationality: {item.strNationality}</h4>
-                            <h4>Club: {item.strTeam}</h4>       
-                       </div>
+                        <img src = {item.strCutout} style = {{width: '100%'}} className = "player-img" alt =""/>   
                     </div>
                     <div className = "col-lg-7 col-md-7 col-sm-12 col-xs-12 details">
-                        <h1>About</h1>
-                            <h4>Born: {item.dateBorn}</h4>
-                            <h4>Birth location: {item.strBirthLocation}</h4>
-                            <h4>Position: {item.strPosition}</h4>
-                            <h4>Height: {item.strHeight}</h4>
-                            <h4>Weight: {item.strWeight}</h4>
-                            <h4>Average wage: {item.strWage}</h4> 
-                            <h2>Description:</h2>                                          
-                        <h6>{item.strDescriptionEN}</h6>
+                      <h1>Name: {item.strPlayer}</h1>
+                      <h4>Nationality: {item.strNationality}</h4>
+                      <h4>Club: {item.strTeam}</h4>       
+              
+                      <h4>Born: {item.dateBorn}</h4>
+                      <h4>Birth location: {item.strBirthLocation}</h4>
+                      <h4>Position: {item.strPosition}</h4>
+                      <h4>Height: {item.strHeight}</h4>
+                      <h4>Weight: {item.strWeight}</h4>
+                      <h4>Average wage: {item.strWage}</h4><br/>
+
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLong" onClick = {() => {this.onPlayerClick(item)}} style = {{pointer: 'cursor'}} >More Information</button>
+
+                      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title" id="exampleModalLongTitle" style = {{pointer: 'cursor', color: 'black'}}>About</h1>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                            <h6 style = {{pointer: 'cursor', color: 'black'}}>{this.state.selectedPlayer}</h6>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                
                     </div>  
                 </div>
                 <div className = " flex-images">
