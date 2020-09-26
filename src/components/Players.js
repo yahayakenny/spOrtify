@@ -83,6 +83,7 @@ export class Players extends Component {
                       </div>                
                     </div>  
                 </div>
+                <br/><br/>
                 <div className = " flex-images">
                     <img src = {item.strFanart1} alt =""/>
                     <img src = {item.strFanart2} alt =""/>
