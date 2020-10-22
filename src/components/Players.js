@@ -52,8 +52,7 @@ export class Players extends Component {
                     <div className = "col-lg-7 col-md-7 col-sm-12 col-xs-12 details">
                       <h1>Name: {item.strPlayer}</h1>
                       <h4>Nationality: {item.strNationality}</h4>
-                      <h4>Club: {item.strTeam}</h4>       
-              
+                      <h4>Club: {item.strTeam}</h4>                    
                       <h4>Born: {item.dateBorn}</h4>
                       <h4>Birth location: {item.strBirthLocation}</h4>
                       <h4>Position: {item.strPosition}</h4>

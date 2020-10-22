@@ -8,9 +8,9 @@ import Players from './Players';
 export class App extends Component {
     render() {
         return (
-            <BrowserRouter>
+          <BrowserRouter>
             <div>
-              <NavBar/>
+                <NavBar/>
                 <Switch>
                  <Route path="/" component={Home} exact/>
                  <Route path="/latest" component={Latest}/>

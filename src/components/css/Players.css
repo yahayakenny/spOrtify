@@ -39,6 +39,10 @@ input {
   margin-bottom: 20px;
 }
 
+.player-img {
+  transition: all 1s;
+}
+
 .player-img:hover {
   transform: scale(1.2);
 }
